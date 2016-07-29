@@ -64,4 +64,11 @@ function eventMarker (e) {
   createMarker(e.lngLat.lng, e.lngLat.lat)
 }
 
+function updateMbMap (lng, lat) {
+  mbmap.flyTo({
+    center: [lng, lat]
+  })
+  console.log('Hello, ' + lng + ', ' + lat)
+}
+
 mbmap.on('click', eventMarker)

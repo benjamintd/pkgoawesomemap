@@ -90,5 +90,11 @@ function updateMap () {
   })
 }
 
+$.get('/config', function (response) {
+  var json_obj = $.parseJSON(response)
+  updateMbMap(json_obj['lng'], json_obj['lat'])
+  console.log('updating map location.')
+})
+
 updateMap()
 window.setInterval(updateMap, 20000)
