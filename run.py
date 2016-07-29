@@ -753,7 +753,7 @@ def register_background_thread(initial_registration=False):
 
 
 def create_app():
-    app = Flask(__name__, template_folder='templates')
+    app = Flask(__name__, template_folder='')
 
     GoogleMaps(app, key=GOOGLEMAPS_KEY)
     return app
