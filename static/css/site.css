@@ -47,7 +47,7 @@ body * {
 }
 
 .mapboxgl-ctrl-icon.mapboxgl-ctrl-geolocate {
-  background-image: url(static/img/geolocate-icon.svg);
+  background-image: url(/static/img/geolocate-icon.svg);
   background-repeat: no-repeat;
   background-position: 5px;
   width: 40px;
